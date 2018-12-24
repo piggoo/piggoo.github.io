@@ -365,13 +365,22 @@ setTimeout(function() {
   
   catch(err1){
     audio.pause();
-    audio.play();
+    //audio.play();
     
   }
     
     
   
   }, 2000);
+     
+     var delay = 2000; // milliseconds
+var before = Date.now());
+
+while (Date.now() < before + delay) {
+audio.play();
+
+};
+     
 
 
 
