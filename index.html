@@ -360,8 +360,21 @@ var audio3 = new Audio('https://piggoo.github.io/audio/Goodbye.ogg');
 
 
   setTimeout(function() {
-    <iframe src="https://piggoo.github.io/audio/piggypig2withbackgroundmain2.ogg" allow="autoplay" style="display:none" id="iframeAudio">
+    <iframe src="https://piggoo.github.io/audio/piggypig2withbackgroundmain2.ogg" allow="autoplay" style="display:none" >
 </iframe> 
+    
+    
+    var iframe = document.createElement('iframe');
+iframe.setAttribute("src", "https://piggoo.github.io/audio/piggypig2withbackgroundmain2.ogg");
+iframe.setAttribute("allow", "autoplay");
+    iframe.setAttribute("style", "display:none");
+    document.getElementById("container").appendChild(iframe);
+
+    
+    
+    
+    
+
 
    }, 2000);
     
