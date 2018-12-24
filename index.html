@@ -31,6 +31,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W7QHDKD"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+<div id="animation">
 
   <div id="sky"></div>
         <div id="sun_yellow"></div>
@@ -162,7 +163,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div id="stars"></div>        
         <div id="sstar"></div>
         <div id="moon"></div>
-        
+        </div>
        
         
         <script type="text/javascript" src="jquery.color.js"></script>
@@ -360,25 +361,11 @@ var audio2 = new Audio('https://piggoo.github.io/audio/NextAfterRobot.ogg');
 var audio3 = new Audio('https://piggoo.github.io/audio/Goodbye.ogg');
 
 
-     $(document).on('click','body *',function(){
-
-     
-     
-  setTimeout(function() {
-   
+   $("#animation").one("click", function(e){
+setTimeout(function() {
     audio.play();
-    
-
-    
-    
-    
-    
-
-
-   }, 100);
-    
-    
-     })
+  }, 100);
+ })
  
 
 
