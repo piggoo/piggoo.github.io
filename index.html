@@ -357,29 +357,24 @@ var audio = new Audio('https://piggoo.github.io/audio/piggypig2withbackgroundmai
 var audio1 = new Audio('https://piggoo.github.io/audio/HeyHaveYouMetMyRObot.ogg');
 var audio2 = new Audio('https://piggoo.github.io/audio/NextAfterRobot.ogg');
 var audio3 = new Audio('https://piggoo.github.io/audio/Goodbye.ogg');
-     
+     try {
 setTimeout(function() {
-  try {
-    audio.play();
-  }
   
-  catch(err1){
-    audio.pause();
-    //audio.play();
-    
-  }
+    audio.play();
+  
     
     
   
   }, 2000);
      
-     var delay = 2000; // milliseconds
-var before = Date.now();
-
-while (Date.now() < before + delay) {
-audio.play();
-
-};
+     }
+     
+     catch(err){
+       
+       audio.play();
+  
+       
+     }
      
 
 
